@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>自己紹介</title>
+</head>
+<body>
+    <h1>チョコボール</h1>
+    <p>元モデル犬のチョコボール君！趣味は匂いを嗅ぐこと</p>
+    <p>
+       <img src="img/tyokokun-08-02.png" alt="チョコボールくんの画像" width="200">
+    </p>
+
+    <h2>趣味</h2>
+    <ul>
+        <li>おやつ</li>
+        <li>お昼寝</li>
+        <li>外の匂い</li>
+    </ul>
+
+    <h2>一日のルーティーン</h2>
+    <ol>
+        <li>朝起きてマーキング</li>
+        <li>親と一緒に会社に出勤</li>
+        <li>来客に吠えて昼寝</li>
+        <li>家に帰ってきてごはんまで寝る</li>
+        <li>ご飯食べて寝る</li>
+    </ol>
+
+    <h2>1週間の予定</h2>
+    <table border="1">
+        <tr>
+            <th>曜日</th>
+            <th>内容</th>
+        </tr>
+        <tr>
+            <td>月曜日</td>
+            <td>会社へ出勤</td>
+        </tr>
+        <tr>
+            <td>火曜日</td>
+            <td>予防接種</td>
+        </tr>
+        <tr>
+            <td>水曜日</td>
+            <td>一日中睡眠</td>
+        </tr>
+        <tr>
+            <td>木曜日</td>
+            <td>ドッグラン</td>
+        </tr>
+        <tr>
+            <td>金曜日</td>
+            <td>美容院</td>
+        </tr>
+        <tr>
+            <td>土曜日</td>
+            <td>お散歩から温泉</td>
+        </tr>
+        <tr>
+            <td>日曜日</td>
+            <td>明日へ備えて休養</td>            
+        </tr>
+    </table>
+    <h2>このページの感想を送る</h2>
+
+<form method="get">
+    <dl>
+        <dt><label for="visitor-name">お名前</label></dt>
+        <dd><input type="text" id="visitor-name" name="visitor-name" required placeholder="ねこ太郎"></dd>
+        <dt>いちばんよかったところ</dt>
+        <dd>
+            <label><input type="radio" name="best" value="photo"><写真></label>
+            <label><input type="radio" name="best" value="list"><好きなもの></label>
+            <label><input type="radio" name="best" value="table"><予定の表></label>
+        </dd>
+        <dt><label for="comment">感想</label></dt>
+        <dd><textarea id="comment" name="comment" rows="4"></textarea></dd>
+    </dl>
+    <button type="submit">送信する</button>
+</form>
+    <h2>おすすめページ</h2>
+    <p>
+        <a href="https://www.google.com">Googleを開く</a>
+    </p>
+</body>
+</html>
