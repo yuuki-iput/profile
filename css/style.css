@@ -1,0 +1,15 @@
+h1{
+    color: #ff0000;
+    font-size:72px;
+    font-family:serif;
+}
+h2{
+    border: 2px solid #000000;
+}
+tabele, th, td{
+    border: 1px solid #333333;
+}
+.favorite{
+    color: #cc3300;
+    font-weight:bold;
+}
