@@ -1,0 +1,126 @@
+/* 全体の余白リセットと背景設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #ff007f, #7928ca, #4338ca);
+}
+
+/* チャット画面全体の枠（スマホ画面風の幅に中央寄せ） */
+.chat-container {
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #121218;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.5);
+}
+
+/* 上のヘッダー */
+.chat-header {
+  background: linear-gradient(90deg, #ff007f, #7928ca);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* 真ん中の会話エリア */
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: radial-gradient(circle at center, #1e1b4b 0%, #0f0c1b 100%);
+}
+
+/* 吹き出しを左右に寄せるための行 */
+.message-row {
+  display: flex;
+  width: 100%;
+}
+
+/* 相手（左寄せ） */
+.message-row.other {
+  justify-content: flex-start;
+}
+
+/* 自分（右寄せ） */
+.message-row.me {
+  justify-content: flex-end;
+}
+
+/* 吹き出しの共通デザイン */
+.bubble {
+  padding: 12px 18px;
+  border-radius: 20px;
+  max-width: 75%;
+  line-height: 1.5;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+/* 相手の吹き出しの色と角の調整 */
+.message-row.other .bubble {
+  background: #ffffff;
+  color: #121218;
+  border-top-left-radius: 4px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* 自分の吹き出しの色と角の調整 */
+.message-row.me .bubble {
+  background: linear-gradient(135deg, #ff007f, #f43f5e);
+  color: #ffffff;
+  border-top-right-radius: 4px;
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+}
+
+/* 下の入力エリア */
+.chat-input-area {
+  background-color: #181824;
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #2a283e;
+}
+
+/* テキスト入力欄 */
+.chat-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #7928ca;
+  background-color: #0f0c1b;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 15px;
+  outline: none;
+}
+
+.chat-input::placeholder {
+  color: #8888aa;
+}
+
+/* 送信ボタン */
+.send-button {
+  background: linear-gradient(135deg, #ff007f, #7928ca);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>チャット画面</title>
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+  <div class="chat-container">
+    <!-- 上のヘッダー -->
+    <header class="chat-header">
+      <h1>カフェ好きの部屋</h1>
+    </header>
+
+    <!-- 真ん中の会話エリア -->
+    <main class="chat-messages">
+      
+      <!-- 相手の吹き出し（左） -->
+      <div class="message-row other">
+        <div class="bubble">
+          こんにちは！今週末、どこかおすすめのカフェに行きませんか？
+        </div>
+      </div>
+
+      <!-- 自分の吹き出し（右） -->
+      <div class="message-row me">
+        <div class="bubble">
+          いいね！ぜひ行きたいです！
+        </div>
+      </div>
+
+      <!-- 相手の吹き出し（左・長文） -->
+      <div class="message-row other">
+        <div class="bubble">
+          駅前に新しくオープンしたロースタリーカフェがすごく気になっているんです。自家焙煎のハンドドリップコーヒーが飲めるみたいで、季節限定のチーズケーキも絶品だとSNSで話題になっていましたよ！
+        </div>
+      </div>
+
+      <!-- 自分の吹き出し（右） -->
+      <div class="message-row me">
+        <div class="bubble">
+          それは最高ですね！チーズケーキ大好きです。
+        </div>
+      </div>
+
+      <!-- 相手の吹き出し（左） -->
+      <div class="message-row other">
+        <div class="bubble">
+          じゃあ土曜日の14時に駅前の改札で待ち合わせしましょうか？
+        </div>
+      </div>
+
+      <!-- 自分の吹き出し（右） -->
+      <div class="message-row me">
+        <div class="bubble">
+          了解です！楽しみにしてます！
+        </div>
+      </div>
+
+    </main>
+
+    <!-- 下の入力欄と送信ボタン -->
+    <footer class="chat-input-area">
+      <input type="text" class="chat-input" placeholder="メッセージを入力...">
+      <button type="button" class="send-button">送信</button>
+    </footer>
+  </div>
+
+</body>
+</html>
